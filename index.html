@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Susan Oladotun | Portfolio</title>
+    <title>Susan Oladotun | Home</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,16 +17,15 @@
 
     <!-- Header / Navigation -->
     <header id="header">
-        <a href="#" class="logo">
+        <a href="index.html" class="logo">
             <span>Susan Oladotun</span>
         </a>
 
         <ul class="nav-links" id="nav-links">
-            <li><a href="#hero" class="nav-link active">Home</a></li>
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#experience" class="nav-link">Experience</a></li>
-            <li><a href="#projects" class="nav-link">Projects</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li><a href="index.html" class="nav-link active">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="projects.html" class="nav-link">Projects</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
 
         <button class="visit-btn" onclick="window.open('https://github.com', '_blank')">
@@ -74,8 +73,8 @@
                         I create modern, scalable, and responsive web applications. Dedicated to crafting clean code and interactive web designs.
                     </p>
                     <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-briefcase"></i> View Projects</a>
-                        <a href="#contact" class="btn btn-secondary"><i class="fa-regular fa-paper-plane"></i> Contact Me</a>
+                        <a href="projects.html" class="btn btn-primary"><i class="fa-solid fa-briefcase"></i> View Projects</a>
+                        <a href="contact.html" class="btn btn-secondary"><i class="fa-regular fa-paper-plane"></i> Contact Me</a>
                     </div>
                     <div class="social-links">
                         <a href="https://github.com/susanoladotun-cpu" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
@@ -104,126 +103,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="section">
-            <div class="section-title">
-                <h2>About <span class="gradient-text">Me</span></h2>
-                <p>Learn more about my background, passion, and technical expertise.</p>
-            </div>
-
-            <div class="about-grid">
-                <div class="about-card">
-                    <h3><i class="fa-solid fa-user-gear"></i> Who I Am</h3>
-                    <p>
-                        I am a passionate Full Stack Developer focused on bringing creative digital ideas to life. With strong expertise in modern JavaScript frameworks, and backend systems, I build software that provides seamless user experiences.
-                    </p>
-                </div>
-
-                <div class="about-card">
-                    <h3><i class="fa-solid fa-layer-group"></i> My Skills</h3>
-                    <div class="skills-container">
-                        <div class="skill-pill"><i class="fa-brands fa-html5"></i> HTML5</div>
-                        <div class="skill-pill"><i class="fa-brands fa-css3-alt"></i> CSS3 / SCSS</div>
-                        <div class="skill-pill"><i class="fa-brands fa-js"></i> JavaScript (ES6+)</div>
-                        <div class="skill-pill"><i class="fa-brands fa-react"></i> Python</div>
-                        <div class="skill-pill"><i class="fa-brands fa-git-alt"></i> Git / GitHub</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="section">
-            <div class="section-title">
-                <h2>Featured <span class="gradient-text">Projects</span></h2>
-                <p>Explore some of my recent work and personal software applications.</p>
-            </div>
-
-            <div class="filter-container">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="web">Web Apps</button>
-            </div>
-
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card" data-category="web" data-title="Task Flow Pro" data-desc="A full-featured project management web app equipped with drag-and-drop task boards, real-time sync, and progress charts." data-tags="React,Node.js,MongoDB" data-demo="https://example.com" data-code="https://github.com">
-                    <div class="project-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80&w=800" alt="Task Flow Pro">
-                    </div>
-                    <div class="project-info">
-                        <h3>Customer Ticket App</h3>
-                        <p>A Python-based issue tracking application designed to log, manage, and resolve customer support tickets efficiently.</p>
-                        <div class="project-tags">
-                            <span>Python</span>
-                        </div>
-                        <div class="project-links">
-                            <button class="btn btn-secondary btn-sm open-modal"><i class="fa-solid fa-circle-info"></i> Details</button>
-                            <a href="https://github.com/susanoladotun-cpu/Customer-Ticket1" target="_blank" class="btn btn-primary btn-sm"><i class="fa-brands fa-github"></i> Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="section">
-            <div class="section-title">
-                <h2>Get In <span class="gradient-text">Touch</span></h2>
-                <p>Have a project in mind or want to collaborate? Feel free to reach out!</p>
-            </div>
-
-            <div class="contact-container">
-                <div class="contact-info">
-                    <div class="contact-card">
-                        <i class="fa-solid fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <p>susanoladotun@gmail.com</p>
-                        </div>
-                    </div>
-
-                    <div class="contact-card">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <div>
-                            <h4>Location</h4>
-                            <p>Abuja, Nigeria (Available Remote)</p>
-                        </div>
-                    </div>
-
-                    <div class="contact-card">
-                        <i class="fa-solid fa-phone"></i>
-                        <div>
-                            <h4>Phone</h4>
-                            <p>+2348032295773</p>
-                        </div>
-                    </div>
-                </div>
-
-                <form id="contact-form" class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" required placeholder="John Doe">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Your Email</label>
-                        <input type="email" id="email" required placeholder="john@example.com">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" rows="5" required placeholder="Hi Susan, I would like to discuss a project..."></textarea>
-                    </div>
-
-                    <button type="submit" class="btn btn-primary btn-block">
-                        <i class="fa-solid fa-paper-plane"></i> Send Message
-                    </button>
-                </form>
             </div>
         </section>
     </main>
