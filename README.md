@@ -3,10 +3,6 @@ Personal portfolio website built with HTML5, CSS3, and modern JavaScript.
 
 A clean, modern and fully responsive personal portfolio website build with standard web technologies. Clean user interface highlighting full-stack development projects, technical skills and professional experience.
 
-![HTML5]
-![CSS3]
-![JavaScript]
-
 ---
 
 ## 🌟 Key Features
