@@ -1,7 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     // 1. Footer Copyright Year
-    document.getElementById('year').textContent = new Date().getFullYear();
+    const yearEl = document.getElementById('year');
+    if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+    }
 
     // 2. Mobile Responsive Navigation Menu Toggle
     const menuIcon = document.getElementById('menu-icon');
@@ -22,28 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 3. Highlight Active Link on Scroll
-    const sections = document.querySelectorAll('section');
-    const navItems = document.querySelectorAll('.nav-link');
-
-    window.addEventListener('scroll', () => {
-        let currentSection = '';
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop - 150;
-            if (window.scrollY >= sectionTop) {
-                currentSection = section.getAttribute('id');
-            }
-        });
-
-        navItems.forEach(item => {
-            item.classList.remove('active');
-            if (item.getAttribute('href') === `#${currentSection}`) {
-                item.classList.add('active');
-            }
-        });
-    });
-
-    // 4. Project Category Filter
+    // 3. Project Category Filter
     const filterBtns = document.querySelectorAll('.filter-btn');
     const projectCards = document.querySelectorAll('.project-card');
 
@@ -66,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 5. Interactive Project Details Modal
+    // 4. Interactive Project Details Modal
     const modal = document.getElementById('project-modal');
     const closeModal = document.querySelector('.close-modal');
     const openModalBtns = document.querySelectorAll('.open-modal');
@@ -89,13 +71,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 tagsContainer.appendChild(span);
             });
 
-            modal.style.display = 'flex';
+            if (modal) modal.style.display = 'flex';
         });
     });
 
     if (closeModal) {
         closeModal.addEventListener('click', () => {
-            modal.style.display = 'none';
+            if (modal) modal.style.display = 'none';
         });
     }
 
@@ -105,11 +87,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 6. Contact Form Submission Feedback
+    // 5. Contact Form Submission Feedback
     const contactForm = document.getElementById('contact-form');
     const toast = document.getElementById('toast');
 
-    if (contactForm) {
+    if (contactForm && toast) {
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
 
