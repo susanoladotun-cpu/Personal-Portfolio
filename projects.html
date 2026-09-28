@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Susan Oladotun</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header id="header">
+        <a href="index.html" class="logo">
+            <span>Susan Oladotun</span>
+        </a>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="projects.html" class="nav-link active">Projects</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <button class="visit-btn" onclick="window.open('https://github.com', '_blank')">
+            <i class="fa-brands fa-github"></i> GitHub
+        </button>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+    </header>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <i class="fa-solid fa-circle-check"></i>
+        <span id="toast-msg">Message sent successfully!</span>
+    </div>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-header">
+                    <h3 id="modal-title">Project Title</h3>
+                    <div id="modal-tags" class="project-tags"></div>
+                </div>
+                <p id="modal-desc">Project detailed description will go here.</p>
+                <div class="modal-actions">
+                    <a href="#" id="modal-demo" target="_blank" class="btn btn-primary btn-sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                    <a href="#" id="modal-code" target="_blank" class="btn btn-secondary btn-sm"><i class="fa-brands fa-github"></i> Source Code</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="section-title">
+                <h2>Featured <span class="gradient-text">Projects</span></h2>
+                <p>Explore some of my recent work and personal software applications.</p>
+            </div>
+
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="web" data-title="Task Flow Pro" data-desc="A full-featured project management web app equipped with drag-and-drop task boards, real-time sync, and progress charts." data-tags="React,Node.js,MongoDB" data-demo="https://example.com" data-code="https://github.com">
+                    <div class="project-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80&w=800" alt="Task Flow Pro">
+                    </div>
+                    <div class="project-info">
+                        <h3>Customer Ticket App</h3>
+                        <p>A Python-based issue tracking application designed to log, manage, and resolve customer support tickets efficiently.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="btn btn-secondary btn-sm open-modal"><i class="fa-solid fa-circle-info"></i> Details</button>
+                            <a href="https://github.com/susanoladotun-cpu/Customer-Ticket1" target="_blank" class="btn btn-primary btn-sm"><i class="fa-brands fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="year"></span> Susan Oladotun. All rights reserved.</p>
+            <div class="footer-socials">
+                <a href="https://github.com/susanoladotun-cpu" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/susan-oladotun-58031a1ba?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
